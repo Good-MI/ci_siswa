@@ -1,0 +1,1581 @@
+ERROR - 2026-10-14 04:36:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:36:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:36:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:36:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:36:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:36:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:36:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:36:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:36:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:36:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:37:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:37:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:39:22 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:39:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(12): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:40:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:40:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:40:35 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:40:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:40:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:40:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:40:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:40:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 04:40:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 04:40:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:00:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:00:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:02:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:02:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:04:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:04:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:04:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:04:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:04:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:04:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:04:40 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:04:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:04:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:04:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:04:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:04:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:04:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:04:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:16:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:16:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:16:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:16:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:16:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:16:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:16:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:16:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:16:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:16:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:17:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:17:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:17:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:17:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:17:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:17:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:17:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:17:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-10-14 05:17:19 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:200
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php(200): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\ci_siswa\system\Database\MySQLi\Connection.php:230
+Stack trace:
+#0 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(550): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci_siswa\system\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci_siswa\system\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\ci_siswa\system\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\ci_siswa\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\ci_siswa\app\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\ci_siswa\app\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+#7 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(974): App\Controllers\Home->index()
+#8 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 D:\xampp\htdocs\ci_siswa\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci_siswa\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci_siswa\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\xampp\htdocs\ci_siswa\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2026-10-14 05:17:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 601.
+ 1 SYSTEMPATH\Database\BaseConnection.php(792): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1660): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `siswa`', [], false)
+ 3 SYSTEMPATH\Model.php(256): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\SiswaModel.php(15): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(14): App\Models\SiswaModel->getSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
